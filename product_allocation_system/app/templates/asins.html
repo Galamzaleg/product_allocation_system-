@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h2>ASINs</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ASIN Code</th>
+            <th>Min Shipping Price</th>
+            <th>Max Shipping Price</th>
+            <th>Item Weight</th>
+            <th>Package Dimensions</th>
+            <th>Quantity Purchased</th>
+            <th>Unit Cost</th>
+            <th>Remaining Quantity</th>
+            <th>Date Added</th>
+        </tr>
+    </thead>
+    <tbody id="asinsTable">
+        <!-- ASIN data will be loaded here -->
+    </tbody>
+</table>
+{% endblock %}
