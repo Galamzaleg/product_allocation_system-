@@ -1,6 +1,6 @@
 from flask import Flask
 from .models import db
-from .sync import sync_data
+from .routes import main
 
 def create_app():
     app = Flask(__name__)
@@ -11,9 +11,6 @@ def create_app():
     with app.app_context():
         db.create_all()
 
-    from .routes import main as main_blueprint
-    app.register_blueprint(main_blueprint)
-
-    sync_data()  # Start data synchronization
+    app.register_blueprint(main)
 
     return app
