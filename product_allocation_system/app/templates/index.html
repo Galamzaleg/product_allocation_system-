@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Allocation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Product Allocation System</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('main.asins') }}">ASINs</a></li>
+            <li><a href="{{ url_for('main.clients') }}">Clients</a></li>
+            <li><a href="{{ url_for('main.stores') }}">Stores</a></li>
+            <li><a href="{{ url_for('main.ungating') }}">Ungating Status</a></li>
+            <li><a href="{{ url_for('main.preorders') }}">Pre-orders</a></li>
+            <li><a href="{{ url_for('main.pallets') }}">Pallets</a></li>
+            <li><a href="{{ url_for('main.cart_generator') }}">Cart Generator</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/allocation.js') }}"></script>
+</body>
+</html>
