@@ -1,0 +1,118 @@
+Purpose
+
+This SOP outlines the steps for using the Product Allocation System to generate pallets for clients, manage inventory, and ensure efficient allocation of products.
+
+Scope
+
+This SOP applies to all employees responsible for managing inventory and generating pallets for clients using the Product Allocation System.
+
+Responsibilities
+
+	•	Inventory Management Team: Responsible for updating and maintaining ASIN data.
+	•	Client Management Team: Responsible for managing client information and priorities.
+	•	Warehouse Team: Responsible for preparing and shipping pallets based on the generated orders.
+
+Procedure
+
+1. Accessing the System
+
+	1.	Open your web browser and navigate to http://localhost:5000 (or the designated URL for the system).
+	2.	Log in with your credentials.
+
+2. Managing ASINs
+
+	1.	Click on the “ASINs” tab in the navigation menu.
+	2.	To add a new ASIN, click “Add ASIN” and fill out the form with the following details:
+	•	ASIN Code
+	•	Min Shipping Price
+	•	Max Shipping Price
+	•	Item Weight
+	•	Package Dimensions (in inches)
+	•	Quantity Purchased
+	•	Unit Cost
+	•	Remaining Quantity
+	•	Date Added
+	3.	To edit an existing ASIN, click the “Edit” button next to the ASIN you want to update.
+	4.	To delete an ASIN, click the “Delete” button next to the ASIN you want to remove.
+
+3. Managing Clients
+
+	1.	Click on the “Clients” tab in the navigation menu.
+	2.	To add a new client, click “Add Client” and fill out the form with the following details:
+	•	Client Name
+	•	Balance
+	•	Priority (Low, Medium, High)
+	3.	To edit an existing client, click the “Edit” button next to the client you want to update.
+	4.	To delete a client, click the “Delete” button next to the client you want to remove.
+
+4. Managing Stores
+
+	1.	Click on the “Stores” tab in the navigation menu.
+	2.	To add a new store, click “Add Store” and fill out the form with the following details:
+	•	Client ID
+	•	Store Name
+	•	Store Status (Active, Suspended)
+	3.	To edit an existing store, click the “Edit” button next to the store you want to update.
+	4.	To delete a store, click the “Delete” button next to the store you want to remove.
+
+5. Managing Ungating Statuses
+
+	1.	Click on the “Ungating Status” tab in the navigation menu.
+	2.	To update the ungating status, click the “Edit” button next to the ASIN you want to update and select the appropriate status (Yes, No, No - Invoice Needed).
+
+6. Managing Pre-orders
+
+	1.	Click on the “Pre-orders” tab in the navigation menu.
+	2.	To add a new pre-order, click “Add Pre-order” and fill out the form with the following details:
+	•	ASIN Code
+	•	Client ID
+	•	Pre-order Quantity
+	•	Pre-order Amount
+	•	Remaining Balance Due
+	•	Expected Arrival Date
+	•	Pre-order Status
+	3.	To edit an existing pre-order, click the “Edit” button next to the pre-order you want to update.
+	4.	To delete a pre-order, click the “Delete” button next to the pre-order you want to remove.
+
+7. Generating Pallets
+
+	1.	Click on the “Cart Generator” tab in the navigation menu.
+	2.	Select the client for whom you want to generate a pallet:
+	•	Enter the Client Name.
+	•	Enter the Client ID.
+	•	Enter the Store ID.
+	3.	Click the “Generate Cart” button.
+	4.	The system will generate a cart based on the available ASINs and the client’s balance, optimizing for the lowest possible shipping cost within the specified range.
+	5.	Review the generated cart in the table below the form. Ensure that the allocation meets the client’s needs and balance constraints.
+
+8. Managing Pallets
+
+	1.	Click on the “Pallets” tab in the navigation menu.
+	2.	Review the list of generated pallets. Each pallet will include details such as:
+	•	Pallet ID
+	•	Client ID
+	•	Store ID
+	•	ASIN Code
+	•	Quantity
+	•	Shipping Cost per Unit
+	•	Total Shipping Cost
+	•	Total Volume
+	•	Total Weight
+	•	Date Shipped
+	•	Destination
+	3.	To mark a pallet as shipped, click the “Edit” button next to the pallet and enter the shipment date.
+
+9. Notifications and Alerts
+
+	1.	Monitor the system for any notifications and alerts regarding:
+	•	Successful allocations
+	•	Insufficient balance
+	•	Ungating status updates
+	•	Pre-order arrivals
+	2.	Address any issues promptly and update the relevant records.
+
+Notes
+
+	•	Ensure that all data entered into the system is accurate and up-to-date.
+	•	Regularly review and update client priorities based on their allocation history and service quality.
+	•	Utilize the mutual store option if a client’s balance is insufficient to generate a standalone pallet.
