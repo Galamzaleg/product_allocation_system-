@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h2>Cart Generator</h2>
+<form id="generateCartForm">
+    <label for="clientName">Client Name:</label>
+    <input type="text" id="clientName" name="clientName"><br><br>
+    <label for="clientID">Client ID:</label>
+    <input type="text" id="clientID" name="clientID"><br><br>
+    <label for="storeID">Store ID:</label>
+    <input type="text" id="storeID" name="storeID"><br><br>
+    <button type="submit">Generate Cart</button>
+</form>
+<table>
+    <thead>
+        <tr>
+            <th>ASIN Code</th>
+            <th>Quantity</th>
+            <th>Unit Cost</th>
+            <th>Shipping Cost per Unit</th>
+            <th>Total Cost</th>
+            <th>Total Volume</th>
+            <th>Total Weight</th>
+        </tr>
+    </thead>
+    <tbody id="cartTable">
+        <!-- Cart data will be loaded here -->
+    </tbody>
+</table>
+{% endblock %}
