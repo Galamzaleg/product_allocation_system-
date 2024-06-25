@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h2>Pallets</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Pallet ID</th>
+            <th>Client ID</th>
+            <th>Store ID</th>
+            <th>ASIN Code</th>
+            <th>Quantity</th>
+            <th>Shipping Cost per Unit</th>
+            <th>Total Shipping Cost</th>
+            <th>Total Volume</th>
+            <th>Total Weight</th>
+            <th>Date Shipped</th>
+            <th>Destination</th>
+        </tr>
+    </thead>
+    <tbody id="palletsTable">
+        <!-- Pallets data will be loaded here -->
+    </tbody>
+</table>
+{% endblock %}
