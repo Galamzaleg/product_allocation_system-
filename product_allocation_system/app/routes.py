@@ -38,7 +38,7 @@ def cart_generator():
 
 @main.route('/generate_pallets', methods=['POST'])
 def generate_pallets_route():
-    result = generate_pallets()
+    result = generate_pallets(request.json['clientID'], request.json['storeID'])
     return jsonify(result)
 
 @main.route('/api/asins')
@@ -120,3 +120,4 @@ def get_pallets():
         'destination': pallet.destination
     } for pallet in pallets]
     return jsonify(pallets_list)
+
