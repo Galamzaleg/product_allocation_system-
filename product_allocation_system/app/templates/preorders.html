@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block content %}
+<h2>Pre-orders</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ASIN Code</th>
+            <th>Client ID</th>
+            <th>Pre-order Quantity</th>
+            <th>Pre-order Amount</th>
+            <th>Remaining Balance Due</th>
+            <th>Expected Arrival Date</th>
+            <th>Pre-order Status</th>
+        </tr>
+    </thead>
+    <tbody id="preordersTable">
+        <!-- Pre-orders data will be loaded here -->
+    </tbody>
+</table>
+{% endblock %}
